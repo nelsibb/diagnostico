@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        var ncamisas, descuento, preciofinal, precios;
+        precio=10000;
+        ncamisas= prompt("Digite el numero de camisas que desee, cada una tiene un valor de 10000. ");
+        precios=ncamisas*precio;
+        if(ncamisas <= 4 ){
+        	descuento=(precios*12.5)/100;
+        	preciofinal=precios-descuento;
+        }else if(ncamisas <= 8 ){
+        	descuento=(precios*20)/100;
+        	preciofinal=precios-descuento;
+        } else {
+        	descuento=(precio*31.5)/100;
+        	preciofinal=precios-descuento;
+        }
+        document.write("El precio es de "+precios);
+        document.write("El descuento es de "+descuento);
+        document.write("El precio final es de "+preciofinal);
+    </script>
+</body>
+</html>

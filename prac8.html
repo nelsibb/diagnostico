@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        	var precioimpuesto, preciofinal, preciototal, kilometros, impuesto, kilometrosfinal, kilometrosfinal2, preciototal2;
+        	var precio=30;
+        	kilometros= parseInt(prompt("digite la cantidad de kilometros que ha andado "));
+        	if(kilometros <= 300){
+        		impuesto=(precio*18)/100;
+        		precioimpuesto=precio-impuesto;
+        		preciofinal=precioimpuesto+impuesto;
+        		document.write(" el precio sin impuesto seria "+precioimpuesto);
+        		document.write("debe pagar "+preciofinal);
+        	}else if(kilometros <= 1000){
+        		kilometrosfinal=kilometros-300;
+        		preciototal=kilometrosfinal*0.15;
+        		impuesto=((preciototal+precio)*18)/100;
+        		precioimpuesto=(preciototal+precio)-impuesto;
+        		preciofinal=precioimpuesto+impuesto;
+        		document.write(" el precio sin impuesto seria "+precioimpuesto);
+        		document.write("debe pagar "+preciofinal);
+
+        	}else{
+        		kilometrosfinal=kilometros-300;
+        		kilometrosfinal2=kilometros-1000;
+        		preciototal=kilometrosfinal*0.15;
+        		preciototal2=kilometrosfinal2*0.10;
+        		impuesto=((preciototal+preciototal2+precio)*18)/100;
+        		precioimpuesto=(preciototal+preciototal2+precio)-impuesto;
+        		preciofinal=precioimpuesto+impuesto;
+        		document.write(" el precio sin impuesto seria "+precioimpuesto);
+        		document.write("debe pagar "+preciofinal);
+        	}
+        </script>
+    </body>
+   </html>

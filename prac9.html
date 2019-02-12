@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        	var nota1, nota2, nota3, nota4, mayor1, mayor2 ,mayor3, eliminada, promedio;
+        	nota1= parseInt(prompt("digite la nota obtenida "));
+        	nota2= parseInt(prompt("digite la nota obtenida "));
+        	nota3= parseInt(prompt("digite la nota obtenida "));
+        	nota4= parseInt(prompt("digite la nota obtenida "));
+        	if(nota1 > nota2 && nota1 > nota3 && nota1 > nota4){
+        		mayor1=nota1;
+        	 if(nota2 > nota3 && nota2 > nota4){
+        		mayor2=nota2;
+        	 if( nota3 > nota4){
+        		mayor3=nota3;
+        		if(nota4 < nota2 && nota4 < nota3){
+        		eliminada=nota4;
+        	}}}
+        	promedio=(mayor1+mayor2+mayor3)/3;
+        	document.write("sus notas son "+mayor1+", "+mayor2+", "+mayor3+" esto le da un promedio de "+promedio+" y su nota eliminada es "+eliminada);
+        }else if(nota2 > nota1 && nota2 > nota3 && nota2 > nota4){
+        		mayor1=nota2;
+        	 if(nota3 > nota1 && nota3 > nota4){
+        		mayor2=nota3;
+        	 if(nota4 > nota1){
+        		mayor3=nota4;
+        		if(nota1 < nota2 && nota1 < nota3){
+        		eliminada=nota1;
+        	}}}
+        		promedio=(mayor1+mayor2+mayor3)/3;
+        		document.write("sus notas son "+mayor1+", "+mayor2+", "+mayor3+" esto le da un promedio de "+promedio+" y su nota eliminada es "+eliminada);
+        }else if(nota3 > nota2 && nota3 > nota1 && nota3 > nota4){
+        		mayor1=nota3;
+        	 if(nota4 > nota1 && nota4 > nota2){
+        		mayor2=nota4;
+        	 if(nota1 > nota2){
+        		mayor3=nota1;
+        		if(nota2 < nota4 && nota2 < nota1){
+        		eliminada=nota2;
+        	}}}
+        		promedio=(mayor1+mayor2+mayor3)/3;
+        		document.write("sus notas son "+mayor1+", "+mayor2+", "+mayor3+" esto le da un promedio de "+promedio+" y su nota eliminada es "+eliminada);
+        }else {
+        		mayor1=nota4;
+        		mayor2=nota1;
+        		mayor3=nota2;
+        		eliminada=nota3;
+				promedio=(mayor1+mayor2+mayor3)/3;
+        		document.write("sus notas son "+mayor1+", "+mayor2+", "+mayor3+" esto le da un promedio de "+promedio+" y su nota eliminada es "+eliminada);
+        	}
+        	
+        	
+        </script>
+    </body>
+   </html>
+
+

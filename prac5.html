@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        	var docena, preciofinal, preciosindescuento, regalias;
+        	var precio=2000;
+        	docena= parseInt(prompt("digite la cantidad de docenas que desea "));
+        	if(docena<=3){
+        		preciosindescuento=precio*docena;
+        		descuento=(preciosindescuento*10)/100;
+        		preciofinal=preciosindescuento-descuento;
+        		document.write("el precio es de "+preciosindescuento+ ", el descuento es de "+descuento+", y su precio final es de "+preciofinal+" y no hay regalias ");
+        	}else if(docena > 3){
+        		preciosindescuento=precio*docena;
+        		descuento=(preciosindescuento*15)/100;
+        		preciofinal=preciosindescuento-descuento;
+        		regalias=docena-3;
+        		document.write("el precio es de "+preciosindescuento+ ", el descuento es de "+descuento+", y su precio final es de "+preciofinal+" y el numero de regalias son "+regalias);
+        	}
+        </script>
+    </body>
+   </html>

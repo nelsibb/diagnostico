@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Escriba 3 numeros</h2>
+        
+        <script>
+        var n1, n2, n3, nmayor, nmedio, nmenor;
+        n1= prompt("Digite su opcion");
+        n2= prompt("Digite su opcion");
+        n3= prompt("Digite su opcion");
+
+             if(n1 <= n2 && n1<=n3){
+                  nmenor=n1;
+                  if(n2 <= n3){
+                    nmayor=n3;
+                    nmedio=n2;
+                  }else{
+                    nmedio=n3;
+                    nmayor=n2;
+                  }
+             }else if(n2 <= n1 && n2 <= n3){
+                  nmenor=n2;
+                  if(n1 <= n3){
+                    nmayor=n3;
+                    nmedio=n1;
+                  }else{
+                    nmedio=n3;
+                    nmayor=n1;
+                  }
+              }else{
+                     nmenor=n3;
+                  if(n1 <= n2){
+                    nmayor=n2;
+                    nmedio=n1;
+                  }else{
+                    nmedio=n2;
+                    nmayor=n1;
+                  }
+              }
+             
+             document.write("el orden es "+nmayor+" "+nmedio+" "+nmenor)
+        
+            
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        var tiempohora, tiempominutos , horaaminutos, tiempofinal, preciofinal; 
+        var preciohora=2.50;
+        tiempohora= parseInt(prompt("cuantas horas estuvo en el parqueo? "));
+        tiempominutos= parseInt(prompt("cuantos minutos estuvo en el parqueo sin contar las horas? "));
+        if(tiempominutos == 0){
+        	preciofinal=preciohora*tiempohora;
+
+        }else{
+        	preciofinal=(tiempohora+1)*preciohora;
+        	}
+        document.write("tiene que pagar "+preciofinal);
+    </script>
+</body>
+</html>
